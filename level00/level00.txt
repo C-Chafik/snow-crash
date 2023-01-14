@@ -1,0 +1,11 @@
+INDICE, FIND the first file that can be runned by the user flag00
+
+
+Il suffisait juste de faire un find sur tous ce que l'user flag00 possede.
+
+On y trouve un fichier john, dans lequel on trouve un code cdiiddwpgswtgt.
+
+Qui est enfaite un code cesar, que l'on a juste besoin de dechiffrer sur dcode.fr
+
+
+Cela nous donne notre token pour passer au level01

@@ -1,0 +1,27 @@
+Celui la demande beaucoup de doc.
+
+
+Cette fois ci il faut carrement cracker le mot de passe du user flag01
+
+Pour ce faire, on sais qu'un mot de passe est ranger dans /etc/shadow
+
+
+Hors ce fichier est reserver au privilege root
+
+cependant on peut toujours acceder au fichier passwd, qui lui nous montre ces informations sur le user flag01
+
+
+flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
+
+
+On voit ici que dans le deuxieme field, il n'y pas de x, mais 42hDRfypTqqnw, qui est le mot de passe hacher du user flag01
+
+
+Il suffit juste donc d'utiliser John The Reaper a l'exterieur de la VM pour cracker le code.
+
+
+On met donc la ligne du dessus dans un fichier .txt qu'on enverra a john, qui nous enverra cet output :
+
+flag01:abcdefg:3001:3001::/home/flag/flag01:/bin/bash
+
+le mot de passe est donc abcdefg, nous avons flag, lets go level02 !
