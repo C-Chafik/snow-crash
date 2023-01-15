@@ -1,3 +1,3 @@
 ## snow-crash
 
-snow-crash is a CTF project that exposes us to security vulnerabilities that we must exploit to move forward.
+**snow-crash is a CTF project that exposes us to security vulnerabilities that we must exploit to move forward.**
