@@ -1,12 +1,12 @@
 ## Level 00
 
-**Clues**
+### Clues
 
 First and only clues we have in the demp video of the CTF :
 
 "FIND the first file that can be runned by the user flag00"
 
-***Solution***
+### Solution
 
 It was just a simple matter of doing a find on everything the user flag00 has.
 
