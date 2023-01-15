@@ -1,15 +1,3 @@
-Pour le level02, on nous donne un fichier "level02.pcap"
-
-Apres recherche de l'extension, c'est un fichier qui est lisible par des lecteur de packet
-
-
-Comme Wireshark, on le lance donc avec wireshark, et on constate qu'il y a des packet a lire.
-
-Ce sont des packet du protocol TCP, on le suit donc grace au logiciel, et on peut y trouver le mot de passe du flag02.
-
-Ce mot de passe est le suivant (Lorsqu'il est lu par wireshark)
-
-"ft_wandr...NDRel.L0L"
 ## Level 02
 
 
