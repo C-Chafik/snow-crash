@@ -33,14 +33,40 @@ So we open the file with Wireshark and we have this :
 
 ![Wireshark](./Wireshark1.png)
 
+We have a lot of traffic, we see that the procotol is TCP, lets follow all the traffic to see if we can extract a message from it :
 
-Wireshark remplace les caractere non printable par des ., il suffit donc de regarder le packet en hexadecimal.
-
-On se rend compte que les . ont la valeur hexa 7f, qui correspond a DEL
-
-Le vrai mot de passe est donc 
+![Wireshark](./Wireshark2.png)
 
 
-"ft_wandrNDRelL0L
+And now everything become clear :
 
-TOKEN : kooda2puivaav1idi4f57q8iq"
+![Wireshark](./Wireshark3.png)
+
+
+If we take logic, the password would be "ft_wandr...NDRel.L0L"
+
+But it doesn't work, what's the problem ?
+
+
+Actually, wireshark replace non-printable character by a dot (.)
+
+And how do we read non-printable character's value ? By looking their hexadecimal value.
+
+![Wireshark](./Wireshark4.png)
+
+
+![Wireshark](./Wireshark5.png)
+
+
+So we now see that all of the dots have the hexadecimal value 7f, which is 127 in decimal, which is the DEL character in the ASCII Table.
+
+Which give us the following password
+
+"ft_waNDReL0L"
+
+```
+level02@SnowCrash:~$ su flag02
+Password:
+Don't forget to launch getflag !
+flag02@SnowCrash:~$
+```
