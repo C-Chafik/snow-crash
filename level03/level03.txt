@@ -1,0 +1,20 @@
+Dans le level03 on nous donne un executable qui affiche "Exploit me"
+
+En faisant un ls -l, on peut constater que l'executable appartient au groupe flag03, il faut donc le manipuler.
+
+Ont peut alors faire un reverse engineering sur ce programme.
+
+On y decouvre que ce programme fait un libcall sur la fonction system, et fait un echo "Exploit me"
+
+Sachant cela, on sais que le programme va tester tout les path de l'env pour appeler echo.
+
+L'executable, possedant des droits admin, on peut alors le manipuler pour executer a notre place la commande getflag.
+
+Pour ce faire on creer un lien symbolique de /bin/getflag sur un fichier qui s'appelle echo, et on ajoute ce fichier au path del'env.
+
+En lancant l'exectuable du niveau, il va alors encore une fois tester tout les path pour trouver echo, y compris le path pieger qu'on a export.
+
+Il va alors executer le lien symbolique avec les droits admins, et nous sortir le flag.
+
+
+token : "qi0maab88jeaj46qoumi7maus"

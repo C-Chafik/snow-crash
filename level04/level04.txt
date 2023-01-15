@@ -1,0 +1,25 @@
+Nous avons cette fois-ci un script perl, level04.pl.
+
+Ce script appartient au user flag04.
+
+Apres analyse, on se rend compte que le script nous affiche ce qu'il recoit, en modifiant la variable x.
+
+On peut soit lui modifier la variable x directement en executant le script, ou en passant par curl.
+
+On comprend tout de suite qu'il s'agit ici d'un code vulnerable a une injection de code.
+
+L'idee est donc d'inserer du code dans le programme pour qu'il execute.
+
+On essaye donc la commande suivante, perl level04.pl x=\`getflag\`
+
+On utilise le caractere special ` pour faire de la substitution de commande , le shell va d'abord executer getflag et afficher l'output.
+
+On donne donc au script la valuer "\`getflag\`", mais il va recevoir `getflag`, puis l'afficher, et l'executer indirectement.
+
+Cela ne marche pas puisque c'est nous qui executons le script, la commande getflag est lancer comme si nous l'avions lancer, il faut faire en sorte que ce soit le script qui le lance.
+
+On va donc passer par curl, et appeler le script avec l'url suivante localhost:4747/level04.plx=\`getflag\`
+
+Et cette fois ci la commande getflag est executer par l'user flag04 et nous donne le bon flag !
+
+token = ne2searoevaevoem4ov4ar8ap

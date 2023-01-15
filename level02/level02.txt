@@ -18,4 +18,6 @@ On se rend compte que les . ont la valeur hexa 7f, qui correspond a DEL
 Le vrai mot de passe est donc 
 
 
-"ft_wandrNDRelL0L"
+"ft_wandrNDRelL0L
+
+TOKEN : kooda2puivaav1idi4f57q8iq"

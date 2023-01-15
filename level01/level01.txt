@@ -25,3 +25,6 @@ On met donc la ligne du dessus dans un fichier .txt qu'on enverra a john, qui no
 flag01:abcdefg:3001:3001::/home/flag/flag01:/bin/bash
 
 le mot de passe est donc abcdefg, nous avons flag, lets go level02 !
+
+
+TOKEN : f2av5il02puano7naaf6adaaf
