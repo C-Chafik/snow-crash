@@ -1,12 +1,12 @@
 ## Level 00
 
-### Clues
+## Clues
 
-First and only clues we have in the demp video of the CTF :
+First and only clues we have in the demo video of the CTF :
 
-"FIND the first file that can be runned by the user flag00"
+"Find the first file that can be runned by the user flag00."
 
-### Solution
+## Solution
 
 It was just a simple matter of doing a find on everything the user flag00 has.
 
@@ -29,3 +29,10 @@ nottoohardhere
 ```
 
 And its actually our password for the flag00 !
+
+
+## What i learned
+
+I learned that you could find files that belongs to user in an UNIX environnement.
+
+Also discovered the Caesar code, its still good to know.
