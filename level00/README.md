@@ -11,11 +11,17 @@ First and only clues we have in the demo video of the CTF :
 It was just a simple matter of doing a find on everything the user flag00 has.
 
 ```sh
-find / -user flag00
+find / -user flag00 2> /dev/null // So we print only good occurence
 ```
 
-We find a file named 'john' which contains the following :
+We find a file named 'john' :
+```
+level00@SnowCrash:~$ find / -user flag00 2> /dev/null
+/usr/sbin/john
+/rofs/usr/sbin/john
+```
 
+Which contains the following :
 ```
 cdiiddwpgswtgt
 ```
@@ -29,6 +35,12 @@ nottoohardhere
 ```
 
 And its actually our password for the flag00 !
+```
+level00@SnowCrash:~$ su flag00
+Password:
+Don't forget to launch getflag !
+flag00@SnowCrash:~$
+```
 
 
 ## What i learned
