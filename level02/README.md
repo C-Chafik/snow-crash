@@ -1,7 +1,7 @@
 ## Level 02
 
 
-## Solution
+## Clues
 
 This time we have a .pcap file
 
@@ -58,3 +58,11 @@ Password:
 Don't forget to launch getflag !
 flag02@SnowCrash:~$
 ```
+
+## What i learned
+
+The utility of Wireshark, and the fact that you can supervise a network using this tools.
+
+Being in touch with non-printable character ( lost 2h realising that the dot was non-printable character)
+
+Be more curious.
