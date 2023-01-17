@@ -98,8 +98,16 @@ quif5eloekouj29ke0vouxean
 
 Once again we move to /tmp in order to create our file.
 
-And its working ! We have our flag, since we didnt used the getflag command this time, this password will log us to the flag09 user, where we will be able to use the getflag command and log to the level09.
+And its working ! We have our flag.
 
+```
+level08@SnowCrash:~$ su flag08
+Password: 
+Don't forget to launch getflag !
+flag08@SnowCrash:~$ getflag
+Check flag.Here is your token : 25749xKZ8L7DkSCwJkT9dyv6f
+flag08@SnowCrash:~$ 
+```
 
 ## What i learned
 
