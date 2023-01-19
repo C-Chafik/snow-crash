@@ -159,6 +159,16 @@ woupa2yuojeeaaed06riuj63c
 woupa2yuojeeaaed06riuj63c
 ```
 
+```
+level10@SnowCrash:~$ su flag10
+Password:
+Don't forget to launch getflag !
+flag10@SnowCrash:~$
+flag10@SnowCrash:~$ getflag
+Check flag.Here is your token : feulo4b72j7edeahuete3no7c
+flag10@SnowCrash:~$
+```
+
 The result may depend of the computer performance, but its working, and it was really a tough one.
 
 
